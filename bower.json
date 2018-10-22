@@ -1,0 +1,16 @@
+{
+  "name": "Nea",
+  "description": "Nails",
+  "main": "index.js",
+  "authors": [
+    "Eugene"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "magnific-popup": "^1.1.0",
+    "jquery-validation": "^1.17.0",
+    "owl.carousel": "^2.2.1",
+    "swiper": "^4.3.3"
+  }
+}

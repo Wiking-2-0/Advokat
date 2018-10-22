@@ -1,0 +1,40 @@
+.blog{
+	padding-top: 40px;
+	padding-bottom: 40px; 
+	.pagination-template{
+		&-item{
+			a{
+				position: relative;
+				padding-bottom: 15px;
+				background-color: transparent;
+				font-family: 'Forum';
+				font-size: 24px;
+				color: #000;
+				&:after{
+					position: absolute;
+					bottom: 0;
+					left: calc(50% - 5px);
+					width: 10px;
+					height: 10px;
+					background-color: $normal-color;
+					border-radius: 50%;
+				}
+			}
+			&:hover,&.active{
+				a{
+					&:after{
+						content: '';
+					}
+				}
+			}
+		}
+	}
+	.news-block_list{
+		
+	}
+	.news-block_item{
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+}

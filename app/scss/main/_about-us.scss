@@ -1,0 +1,190 @@
+.about-us{
+	padding-top: 100px;
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media only screen and (max-width: 992px) {
+
+	}
+	@media only screen and (max-width: 768px) {
+		padding-top: 30px;
+	}
+	@media only screen and (max-width: 550px) {
+
+
+	}
+}
+
+.about-us_text{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-image: url('../img/about-us-text-bg.jpg');
+	background-size: cover;
+	-ms-background-position-x: 0%;
+	background-position-x: 0%;
+	&-descr{
+		color: #FFF;
+		.title{
+			position: relative;
+			display: block;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			font-size: 24px;
+			line-height: 36px;
+			font-weight: bold;
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 60%;
+				height: 1px;
+				background-color: #FFF;
+			}
+		}
+		p{
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		background-position-x: 33%;
+	}
+	@media only screen and (max-width: 768px) {
+		position: relative;
+		background-position-x: 15%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		z-index: 0;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: -1;
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+		&-descr{
+			.title{
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				font-size: 20px;
+				line-height: 1.4;
+				text-align: center;
+			}
+			.descr{
+				text-align: justify;
+			}
+		}
+	}
+}
+.about-us__advantages{
+	padding-top: 80px;
+	padding-bottom: 60px;
+	background-image: url(../img/advantages-bg.jpg);
+	background-size: cover;
+	background-position-x: 100%;
+	&--list{
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+	}
+	&--item{
+		margin-bottom: 20px;
+		.item-head{
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			&-number{
+				display: block;
+				padding-left: 20px;
+				border-left: 1px solid #bcafa7;
+				color: #bcafa7;
+				font-size: 32px;
+				line-height: 45px;
+				font-weight: bold;
+			}
+		}
+		.img-wrap{
+			width: 45px;
+			height: 45px;
+			margin-right: 20px;
+			img,svg{
+				height: 100%;
+				object-fit:contain;
+				fill:#bcafa7;
+			}
+		}
+		.item-title{
+			font-size: 16px;
+			line-height: 24px;
+			color: #FFF;
+		}
+	}
+	@media only screen and (max-width: 992px) {
+		&--item{
+			width: 50%;
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		&--item{
+			text-align: center;
+			/* width: 100%;
+			max-width: 350px;
+			margin-left: auto;
+			margin-right: auto; */
+			.item-head{
+				justify-content: center;
+			}
+		}
+	}
+}
+.about-us__guarantee{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-image: url(../img/about-us-guarantee-bg.jpg);
+	background-size: cover;
+	background-position-x: 100%;
+	&--list{
+		padding-left: 0;
+		margin-bottom: 0;
+		list-style: none;
+	}
+	&--item{
+		margin-bottom: 30px;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		.img-wrap{
+			width: 65px;
+			height: 65px;
+			margin-right: 30px;
+			padding: 12px;
+			background-color: #FFF;
+			border-radius: 10px;
+			-webkit-box-shadow: 4px 4px 10px 5px rgba(0,0,0,0.1);
+			-moz-box-shadow: 4px 4px 10px 5px rgba(0,0,0,0.1);
+			box-shadow: 4px 4px 10px 5px rgba(0,0,0,0.1);
+			img,svg{
+				height: 100%;
+				object-fit: contain;
+				fill:$active-color;
+			}
+		}
+		p{
+			margin-bottom: 0;
+			font-size: 18px;
+			line-height: 1;
+		}
+	}
+}
